@@ -25,13 +25,14 @@ header{
     height: 40px;
     align-items: center;
     position: fixed;
+    width: 100%;
     background-color: white;
 
     
 }
 h1{
     
-    width: 100px;
+    
     font-size: medium;
     font-weight: 800;
     margin-left: var(--margen-izquierdo);
@@ -42,15 +43,15 @@ h1{
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    width: 680px;
+    width: 600px;
     margin-left: 20px;
 }
 
 .redes{
     justify-content: flex-start;
-    padding-right: 87px;
+    padding-right: 0px;
     align-items: center;
-    margin-right: 126px;
+    margin-right: 50px;
 
 }
 .iconoredes{
@@ -60,7 +61,8 @@ h1{
     margin-left: 15px;
 }
 
-.contenedor1{
+section.contenedor1{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     color: black;
@@ -585,4 +587,29 @@ textarea{
     color: whitesmoke;
     font-size: 12px;
     margin-top: 15px;
+}
+
+/*comienza responsive*/
+
+@media(max-width:1000px){
+    .menu{
+        display: none;
+    }
+    .contenedor1{
+        flex-direction: column;
+        
+    }
+    .datosyexperiencia{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 0px;
+        width: auto;
+        height: auto;
+    }
+    .presentacion2{
+        margin: 0 auto;
+    }
+    
 }
